@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Api</title>
-    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
-<script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
-    <script src="script.js" defer></script>
+    <!-- <link rel="stylesheet" href="bootstrap-5.2.2-dist\css\bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<!-- <script src="bootstrap-5.2.2-dist\js\bootstrap.min.js"></script> -->
+    <script src="git.js" defer></script>
     <style>
-        body{
-            background-image: url(gitcat.svg);
-            background-size: 70rem 100%;
-            background-repeat: no-repeat;
-
-        }
+       body{
+    background-color: violet;
+       } 
     </style>
 </head>
 <body>
     <form action="">
-        <div class="col-3">
-            <select name="" id="tabu" class=" form-control">
-                <option value="it21b01a1226" class="sel">it21b01a1226</option>
-                <option value="it21b01a1227" class=" sel">it21b01a1227</option>
-                <option value="it21b01a1234" class=" sel">it21b01a1234</option>
-                <option value="it21b01a1255" class="sel">it21b01a1255</option>
-                <option value="it21b01a1258" class="sel">it21b01a1258</option>
-                <option value="it21b01a1262" class="sel">it21b01a1262</option>
-               
-                <option value="ithod" class="sel">ithod</option>
-                <!-- <option value="" class="select"></option>
-                <option value="" class="select"></option> -->
-        
-               </select>
-               <br>
-               <input type="button" value="sumbit" id="btn1" onclick="getdata()" class="btn btn-success">
+        <div class="form-group row" style="margin-left: 10rem;">
+            
+            <label for="uname" class="form-lable text-danger" id="lbl">GitHub's Username</label>
+            
+            <div class="col-4">
+                <input type="text" name="" id="uname" class="form-control col- 4">
+            </div>
+            
+
+            <br>
+            <br>
+            <br>
+            <div align ="center"></div>
+            <!-- <button class="btn btn-success btn-lg btn-outline" id="btn1"></button> -->
+            <input type="button" value="SUbmit" class="btn btn-success btn-lg btn-outline col-3" id="btn1" onclick="getdata()" style="margin-left: 1rem;">
+            
         </div>
        
-       
     </form>
-    <table class="table table-striped table- bordered table-dark" style="visibility: hidden;" id="tab">
-        <tbody >
-            <tr  >
+    <table class="table table-striped table- bordered table-light" style="visibility: hidden;" id="tab">
+        <tbody>
+            <tr >
                 <th>Name</th>
                 <td id="v1data"></td>
                 
@@ -70,7 +66,8 @@
             </tr>
 
         </tbody>
-       
+        <!-- <img src="" alt="" id="img"  > -->
+        
         
         
     </table>
@@ -94,5 +91,6 @@
         </tbody>
     </table>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,31 +4,11 @@ let re;
 let tab2;
 let rows;
 let h;
-let u_name;
-let linkk;
-const vals = {
-  it21b01a1226 :"RajiniBoddepalli",
-  it21b01a1234:"LeelavathiChandu1",
-  it21b01a1262 :"sitasaisudha",
-  it21b01a1258 : "Madhuri1626",
-  it21b01a1227:"sravya185",
-  it21b01a1255 : "Nikitha-21",
-  it21b01a1264 : "Sripranya",
-  ithod : "dvnr76"
-};
-// const arr =['sitasaisudha','dvnr76'];
-let select ;
-
 function getdata(){
-  select = document.getElementById('tabu');
-  linkk = select.value;
-  console.log(linkk)
-  user = vals[linkk]
-  console.log(user)
-    fetch_data(user);
+   
+    user = document.getElementById("uname").value; 
+    fetch_data(user);  
 }
-
-
 function fetch_data(user){
     fetch('https://api.github.com/users/'+user)
   .then(response => response.json())
@@ -36,12 +16,12 @@ function fetch_data(user){
 
 }
 function handeldata(data){
-  // let l = document.getElementById("lbl").style.visibility ="hidden";
+  let l = document.getElementById("lbl").style.visibility ="hidden";
   
 
   
-  // uname.style.visibility="hidden";
-//   let bt = document.getElementById("btn1").style.visibility="hidden";
+  uname.style.visibility="hidden";
+  let bt = document.getElementById("btn1").style.visibility="hidden";
   let t = document.getElementById('tab').style.visibility = "visible";
   let display1 = document.getElementById("v1data");
    display1.innerHTML =  data["login"];
